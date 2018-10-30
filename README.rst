@@ -7,7 +7,7 @@ if needed.
 
 To start the server::
     
-    $ python3 ./dsre/manage.py
+    $ python3 ./dsre/manage.py runserver
 
 In another termainl you can run::
 
@@ -17,3 +17,7 @@ In another termainl you can run::
 to validate the behavior.
 
 Debugging is on by default.
+
+To test the application::
+
+    $ python3 ./dsre/manage.py test
