@@ -5,7 +5,7 @@ log = logging.getLogger(__name__)
 
 def index(request):
     if request.method == "GET":
-        if request.META['HTTP_ACCEPT'] == "application/json":
+        if request.META.get('HTTP_ACCEPT', None) == "application/json":
             log.debug("returning a json object")
             return HttpResponse('{"message": "Good morning"}')
         else:
